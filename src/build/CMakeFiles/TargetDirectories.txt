@@ -1,3 +1,4 @@
-/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles/NBodySim.dir
+/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles/main2D.dir
+/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles/main_barneshut2d.dir
 /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles/edit_cache.dir
 /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles/rebuild_cache.dir

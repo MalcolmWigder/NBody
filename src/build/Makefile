@@ -117,41 +117,102 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named NBodySim
+# Target rules for targets named main2D
 
 # Build rule for target.
-NBodySim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NBodySim
-.PHONY : NBodySim
+main2D: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main2D
+.PHONY : main2D
 
 # fast build rule for target.
-NBodySim/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/build
-.PHONY : NBodySim/fast
+main2D/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/build
+.PHONY : main2D/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named main_barneshut2d
+
+# Build rule for target.
+main_barneshut2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_barneshut2d
+.PHONY : main_barneshut2d
+
+# fast build rule for target.
+main_barneshut2d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/build
+.PHONY : main_barneshut2d/fast
+
+BarnesHut2D.o: BarnesHut2D.cpp.o
+.PHONY : BarnesHut2D.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/main.cpp.o
-.PHONY : main.cpp.o
+BarnesHut2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/BarnesHut2D.cpp.o
+.PHONY : BarnesHut2D.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+BarnesHut2D.i: BarnesHut2D.cpp.i
+.PHONY : BarnesHut2D.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/main.cpp.i
-.PHONY : main.cpp.i
+BarnesHut2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/BarnesHut2D.cpp.i
+.PHONY : BarnesHut2D.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+BarnesHut2D.s: BarnesHut2D.cpp.s
+.PHONY : BarnesHut2D.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/main.cpp.s
-.PHONY : main.cpp.s
+BarnesHut2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/BarnesHut2D.cpp.s
+.PHONY : BarnesHut2D.cpp.s
+
+main2D.o: main2D.cpp.o
+.PHONY : main2D.o
+
+# target to build an object file
+main2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/main2D.cpp.o
+.PHONY : main2D.cpp.o
+
+main2D.i: main2D.cpp.i
+.PHONY : main2D.i
+
+# target to preprocess a source file
+main2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/main2D.cpp.i
+.PHONY : main2D.cpp.i
+
+main2D.s: main2D.cpp.s
+.PHONY : main2D.s
+
+# target to generate assembly for a file
+main2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/main2D.cpp.s
+.PHONY : main2D.cpp.s
+
+main_barneshut2d.o: main_barneshut2d.cpp.o
+.PHONY : main_barneshut2d.o
+
+# target to build an object file
+main_barneshut2d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/main_barneshut2d.cpp.o
+.PHONY : main_barneshut2d.cpp.o
+
+main_barneshut2d.i: main_barneshut2d.cpp.i
+.PHONY : main_barneshut2d.i
+
+# target to preprocess a source file
+main_barneshut2d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/main_barneshut2d.cpp.i
+.PHONY : main_barneshut2d.cpp.i
+
+main_barneshut2d.s: main_barneshut2d.cpp.s
+.PHONY : main_barneshut2d.s
+
+# target to generate assembly for a file
+main_barneshut2d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/main_barneshut2d.cpp.s
+.PHONY : main_barneshut2d.cpp.s
 
 # Help Target
 help:
@@ -161,10 +222,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... NBodySim"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main2D"
+	@echo "... main_barneshut2d"
+	@echo "... BarnesHut2D.o"
+	@echo "... BarnesHut2D.i"
+	@echo "... BarnesHut2D.s"
+	@echo "... main2D.o"
+	@echo "... main2D.i"
+	@echo "... main2D.s"
+	@echo "... main_barneshut2d.o"
+	@echo "... main_barneshut2d.i"
+	@echo "... main_barneshut2d.s"
 .PHONY : help
 
 

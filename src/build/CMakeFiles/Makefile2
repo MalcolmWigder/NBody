@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/NBodySim.dir/all
+all: CMakeFiles/main2D.dir/all
+all: CMakeFiles/main_barneshut2d.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/NBodySim.dir/codegen
+codegen: CMakeFiles/main2D.dir/codegen
+codegen: CMakeFiles/main_barneshut2d.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +77,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/NBodySim.dir/clean
+clean: CMakeFiles/main2D.dir/clean
+clean: CMakeFiles/main_barneshut2d.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/NBodySim.dir
+# Target rules for target CMakeFiles/main2D.dir
 
 # All Build rule for target.
-CMakeFiles/NBodySim.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=1,2 "Built target NBodySim"
-.PHONY : CMakeFiles/NBodySim.dir/all
+CMakeFiles/main2D.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=1,2 "Built target main2D"
+.PHONY : CMakeFiles/main2D.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/NBodySim.dir/rule: cmake_check_build_system
+CMakeFiles/main2D.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NBodySim.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main2D.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/NBodySim.dir/rule
+.PHONY : CMakeFiles/main2D.dir/rule
 
 # Convenience name for target.
-NBodySim: CMakeFiles/NBodySim.dir/rule
-.PHONY : NBodySim
+main2D: CMakeFiles/main2D.dir/rule
+.PHONY : main2D
 
 # codegen rule for target.
-CMakeFiles/NBodySim.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=1,2 "Finished codegen for target NBodySim"
-.PHONY : CMakeFiles/NBodySim.dir/codegen
+CMakeFiles/main2D.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=1,2 "Finished codegen for target main2D"
+.PHONY : CMakeFiles/main2D.dir/codegen
 
 # clean rule for target.
-CMakeFiles/NBodySim.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBodySim.dir/build.make CMakeFiles/NBodySim.dir/clean
-.PHONY : CMakeFiles/NBodySim.dir/clean
+CMakeFiles/main2D.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2D.dir/build.make CMakeFiles/main2D.dir/clean
+.PHONY : CMakeFiles/main2D.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main_barneshut2d.dir
+
+# All Build rule for target.
+CMakeFiles/main_barneshut2d.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=3,4,5 "Built target main_barneshut2d"
+.PHONY : CMakeFiles/main_barneshut2d.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main_barneshut2d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_barneshut2d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/main_barneshut2d.dir/rule
+
+# Convenience name for target.
+main_barneshut2d: CMakeFiles/main_barneshut2d.dir/rule
+.PHONY : main_barneshut2d
+
+# codegen rule for target.
+CMakeFiles/main_barneshut2d.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/malcolmwigder/Desktop/OpenProjects/NBody/src/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target main_barneshut2d"
+.PHONY : CMakeFiles/main_barneshut2d.dir/codegen
+
+# clean rule for target.
+CMakeFiles/main_barneshut2d.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_barneshut2d.dir/build.make CMakeFiles/main_barneshut2d.dir/clean
+.PHONY : CMakeFiles/main_barneshut2d.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
