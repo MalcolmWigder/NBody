@@ -1,0 +1,2 @@
+- 3D barnes-hutt
+- put barnes-hutt on the gpu (whole ordeal)
