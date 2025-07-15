@@ -10,7 +10,7 @@ const float G = 0.01f;
 const int WIDTH = 800;
 const int HEIGHT = 800;
 const int NUM_PARTICLES = 8000;
-const float R = 300.f;
+const float R = 350.f;
 
 float magnitude(const sf::Vector2f& v) {
     return std::sqrt(v.x * v.x + v.y * v.y);
@@ -30,8 +30,8 @@ int main() {
             WIDTH  / 2 + dist * std::cos(angle),
             HEIGHT / 2 + dist * std::sin(angle)
         );
-
-        float v = std::sqrt(G * NUM_PARTICLES * dist / (R));
+        float k = 1;
+        float v = std::sqrt(G * NUM_PARTICLES *dist / (R*k));
         particles[i].vel = sf::Vector2f(
             -v * std::sin(angle),
              v * std::cos(angle)
